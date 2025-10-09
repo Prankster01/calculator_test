@@ -1,0 +1,30 @@
+.conartist{
+    display:flex;
+    justify-content: center;
+}
+
+.con{
+    display:flex;
+    border: 5px solid black;
+    height: 650px;
+    width: 400px;
+}
+
+.numcon{
+    height: 175px;
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.oppcon{
+    height: 175px;
+    display:flex;
+    justify-content:;
+    flex-wrap: wrap;
+}
+
+button{
+    height: 50px;
+    width: 50px;
+}

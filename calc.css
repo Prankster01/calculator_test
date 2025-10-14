@@ -5,25 +5,49 @@
 
 .con{
     display:flex;
+    flex-direction: column;
     border: 5px solid black;
-    height: 650px;
-    width: 600px;
-    align-items: flex-end;
+    height: 580px;
+    width: 314px;
+    align-items: center;
+    justify-content: flex-end;
+    gap:70px
 }
 
-
+.screen{
+    border: solid 5px black;
+    height: 150px;
+    width: 286px;
+}
 
 .buttoncon{
-    border: 5px solid red;
+    height: 310px;
+    width: 290px;
     display:flex;
-    justify-content:space-evenly;
-    align-content: space-evenly;
-    flex-wrap: wrap;
-    flex: 1;
+    align-content:flex-start;
+    flex-wrap:wrap;
+    gap:12px;
 }
 
+.buttons{
+    height:63px;
+    width: 63px;
+    border-radius: 100%;
+    position:relative;
+    background-image: linear-gradient(to bottom right, lightgray, black);
+}
 
-button{
-    height:70px;
-    width: 70px;
+.buttons::after{
+    content:"";
+    position:absolute;
+    height:100%;
+    width:100%;
+    border-radius: 1000px;
+    
+    
+}
+
+#eq{
+    flex:1;
+    border-radius: 1%;
 }

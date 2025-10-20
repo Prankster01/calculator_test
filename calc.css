@@ -15,25 +15,25 @@
 }
 
 .screen{
-    border: solid 5px black;
+    border: solid 5px gray;
     height: 150px;
     width: 278px;
     display:flex;
     position: relative;
-    justify-content: flex-end;
-    gap:10px
+    background-color: black;
 }
 
 .displays{
     font-size: 22px;
+    color:white;
 }
 
-#equation{
+#number1{
     position: absolute;
     left: 10px;
 }
 
-#solution{
+#answer{
     position: absolute;
     bottom: 0;
     right:10px;

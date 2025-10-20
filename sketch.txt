@@ -1,0 +1,77 @@
+design:
+
+BOX
+_________________
+|74x59          |
+|___________4366|
+
+[7] [8] [9]   [÷]
+[4] [5] [6]   [x]
+[1] [2] [3]   [-]
+[0] [   =   ] [+]
+
+
+0
+
+Without space
+_______________
+|74x59        |
+|_________4366|
+
+
+[7] [8] [9] [÷]
+[4] [5] [6] [x]
+[1] [2] [3] [-]
+[0] [  =  ] [+]
+
+
+1
+
+With space
+________________
+|74x59         |
+|              |
+|__________4366|
+
+[7] [8] [9]  [÷]
+[4] [5] [6]  [x]
+[1] [2] [3]  [-]
+[0] [  =  ]  [+]
+
+
+2
+
+Long
+_______________
+|74x59        |
+|             |
+|             |
+|_________4366|
+
+[7] [8] [9] [÷]
+
+[4] [5] [6] [x]
+
+[1] [2] [3] [-]
+
+[0] [  =  ] [+]
+
+1
+
+
+
+Dimensions:
+
+//
+numcon: (4gap + 3button)px, (4gap + 4button + gap2)px 
+oppcon: (x - gap) || (gap + x) px, ypx
+//
+
+butttoncon: (5gap + 4buttons)px, (4gap + 4button + gap2)px
+
+screen size: around(3char || 4char)px, px 
+
+calc size: (screen + gap1 + 4button + 4gap2 + gap3) || (screen + gap1 + gap2 + 4button + 3gap3 + gap4)px, 
+(gap1 + 4button + 3gap2 + gap3)px
+
+

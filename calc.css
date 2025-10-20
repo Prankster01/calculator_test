@@ -17,12 +17,33 @@
 .screen{
     border: solid 5px black;
     height: 150px;
-    width: 286px;
+    width: 278px;
+    display:flex;
+    position: relative;
+    justify-content: flex-end;
+    gap:10px
 }
+
+.displays{
+    font-size: 22px;
+}
+
+#equation{
+    position: absolute;
+    left: 10px;
+}
+
+#solution{
+    position: absolute;
+    bottom: 0;
+    right:10px;
+}
+
+
 
 .buttoncon{
     height: 310px;
-    width: 290px;
+    width: 288px;
     display:flex;
     align-content:flex-start;
     flex-wrap:wrap;

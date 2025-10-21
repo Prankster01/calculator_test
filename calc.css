@@ -6,21 +6,27 @@
 .con{
     display:flex;
     flex-direction: column;
-    border: 5px solid black;
-    height: 580px;
-    width: 314px;
+    border: 5px solid rgb(64, 61, 61);
+    border-radius: 15px;
+    height: 585px;
+    width: 320px;
+    background-color: rgb(39, 37, 37);
     align-items: center;
     justify-content: flex-end;
     gap:70px
 }
 
 .screen{
-    border: solid 5px gray;
-    height: 150px;
-    width: 278px;
+    border: solid 5px rgb(65, 60, 60);
+    border-radius: 10px;
+    height: 120px;
+    width: 248px;
     display:flex;
     position: relative;
     background-color: black;
+    bottom:10px;
+    gap:5px;
+    padding: 15px;
 }
 
 .displays{
@@ -28,15 +34,10 @@
     color:white;
 }
 
-#number1{
-    position: absolute;
-    left: 10px;
-}
-
 #answer{
     position: absolute;
-    bottom: 0;
-    right:10px;
+    bottom:15px;
+    right:15px;
 }
 
 
@@ -55,20 +56,31 @@
     width: 63px;
     border-radius: 100%;
     position:relative;
-    background-image: linear-gradient(to bottom right, lightgray, black);
-}
-
-.buttons::after{
-    content:"";
-    position:absolute;
-    height:100%;
-    width:100%;
-    border-radius: 1000px;
-    
-    
+    background-image: linear-gradient(to bottom right, black, azure);
 }
 
 #eq{
+    border:none;
     flex:1;
-    border-radius: 1%;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, purple, rgb(59, 160, 194));
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+#eq::after{
+    content:"";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, rgb(12, 12, 192), purple);
+    z-index: -1;
+}
+
+#eq:hover{
+    z-index:0;
+}
+

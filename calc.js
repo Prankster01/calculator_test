@@ -211,8 +211,72 @@ function plus(){
         opper.textContent = opp;
         action = 2;
     }
-    
     else{
         answer.textContent = "Error, you can only put an operator after a number! Calculator only accepts an operator at a time!";
+    }
+}
+
+function minus(){
+    if (action === 1){
+        opp = "-";
+        opper.textContent = opp;
+        action = 2;
+    }
+    else{
+        answer.textContent = "Error, you can only put an operator after a number! Calculator only accepts an operator at a time!";
+    }
+}
+
+function multi(){
+    if (action === 1){
+        opp = "*";
+        opper.textContent = opp;
+        action = 2;
+    }   
+    else{
+        answer.textContent = "Error, you can only put an operator after a number! Calculator only accepts an operator at a time!";
+    }
+}
+
+function divi(){
+    if (action === 1){
+        opp = "/";
+        opper.textContent = opp;
+        action = 2;
+    }
+    else{
+        answer.textContent = "Error, you can only put an operator after a number! Calculator only accepts an operator at a time!";
+    }
+}
+
+function equals(){
+    if (action === 1){
+        answer.textContent = num1;
+        action = 3;
+    }
+    else if(action === 2){
+        if(num2 === ""){
+            answer.textContent = "The = sign can only be used after a number"
+        }
+        else{
+            let solution;
+            let intnum1 = Number(num1);
+            let intnum2 = Number(num2);
+
+            if (opp === "+"){
+                solution = intnum1 + intnum2;
+            }
+            else if(opp === "-"){
+                solution = intnum1 - intnum2;
+            }
+            else if(opp === "*"){
+                solution = intnum1 * intnum2;
+            }
+            else{
+                solution = intnum1 / intnum2;
+            }
+
+            answer.textContent = solution;
+        }
     }
 }

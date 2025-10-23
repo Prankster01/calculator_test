@@ -63,7 +63,7 @@
     border:none;
     flex:1;
     border-radius: 10px;
-    background-image: linear-gradient(to bottom right, purple, rgb(59, 160, 194));
+    background-image: linear-gradient(to bottom right, rgb(203, 100, 203), rgb(59, 160, 194));
     position: relative;
     display: flex;
     justify-content: center;
@@ -76,7 +76,7 @@
     height: 100%;
     width: 100%;
     border-radius: 10px;
-    background-image: linear-gradient(to bottom right, rgb(12, 12, 192), purple);
+    background-image: linear-gradient(to bottom right, rgb(188, 55, 188), rgb(80, 80, 211));
     z-index: -1;
 }
 
@@ -84,3 +84,90 @@
     z-index:0;
 }
 
+#divi{
+    border:none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#divi::after{
+    content:"";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    background-image: linear-gradient(to bottom right, red, rgb(251, 198, 196));
+    z-index: -1;
+}
+
+#divi:hover{
+    z-index:0;
+}
+
+#plus{
+    border:none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#plus::after{
+    content:"";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    background-image: linear-gradient(to bottom right, red, rgb(251, 198, 196));
+    z-index: -1;
+}
+
+#plus:hover{
+    z-index:0;
+}
+
+#multi{
+    border:none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#multi::after{
+    content:"";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    background-image: linear-gradient(to bottom right, red, rgb(251, 198, 196));
+    z-index: -1;
+}
+
+#multi:hover{
+    z-index:0;
+}
+
+#minus{
+    border:none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#minus::after{
+    content:"";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    background-image: linear-gradient(to bottom right, red, rgb(251, 198, 196));
+    z-index: -1;
+}
+
+#minus:hover{
+    z-index:0;
+}
